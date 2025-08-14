@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #dedede; 
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #005f73;
+}
+
+
+/* Contact form wrapper */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+main h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #005f73;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 95%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #005f73;
+    box-shadow: 0 0 4px rgba(0,95,115,0.4);
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Submit button */
+form button {
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.5rem;
+    background-color: #005f73;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+form button:hover {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+/* Layout */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Styled ASIDE section */
+aside {
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+/* Space each block in aside */
+aside h3 {
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #005f73;
+}
+
+aside p, aside ul {
+    margin: 0 0 0.8rem 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Links for social media */
+aside ul {
+    list-style: none;
+    padding-left: 0;
+}
+aside ul li {
+    margin-bottom: 0.3rem;
+}
+aside ul li a {
+    color: #005f73;
+    text-decoration: none;
+}
+aside ul li a:hover {
+    text-decoration: underline;
+    color: #0a9396;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    form {
+        width: 90%;
+    }
+}
+
+/* FAQ section styling */
+.faq-section {
+    background-color: #ffffff;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 900px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.faq-section h2 {
+    text-align: center;
+    color: #005f73;
+    margin-bottom: 1rem;
+}
+
+.faq {
+    margin-bottom: 1.2rem;
+}
+
+.faq h3 {
+    color: #0a9396;
+    margin-bottom: 0.3rem;
+}
+
+.faq p {
+    margin: 0;
+    line-height: 1.4;
+    color: #333;
+}
+
+.faq:hover {
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+.social-links li {
+    display: flex;
+    align-items: center; 
+}
+
+.social-links img {
+    width: 18px;           /* Small icon size */
+    height: 18px;
+    margin-right: 8px;     /* Gap between icon and text */
+}
