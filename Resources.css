@@ -148,3 +148,139 @@ section ul li a:hover {
         width: 90%;
     }
 }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; 
+    color: #333;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #54bdee;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 0.8fr;
+    gap: 2rem;
+    padding: 1rem 2rem;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 0.6rem;
+    text-align: left;
+}
+table th {
+    background-color: #94d2bd;
+    color: #000;
+}
+table a {
+    color: #005f73;
+    text-decoration: none;
+}
+table a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar */
+aside {
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    line-height: 1.4;
+}
+
+aside h3 {
+    text-align: center; /* center heading */
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+aside ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+aside ul li {
+    margin-bottom: 0.5rem;
+}
+aside ul li a {
+    display: block;
+    color: #005f73;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Purpose statement style */
+.purpose-statement {
+    font-style: italic;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+}
+
+.extra-info {
+    margin-top: 2.5rem;
+    background-color: #ffffff;
+    padding: 1.2rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    line-height: 1.6;
+}
+
+.extra-info h3 {
+    margin-top: 1rem;
+    color: #54bdee;
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+.extra-info ul li a {
+    font-size: 0.9rem;
+    color: #005f73;
+    text-decoration: none;
+}
+
+.extra-info ul li a:hover {
+    text-decoration: underline;
+}
+
+.extra-info ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.extra-info ul li {
+    margin-bottom: 0.6rem;
+}
+
+.extra-info a {
+    color: #005f73;
+    text-decoration: none;
+}
+.extra-info a:hover {
+    text-decoration: underline;
+}
+
+.extra-info p strong {
+    display: block;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
