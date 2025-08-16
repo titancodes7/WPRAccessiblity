@@ -96,13 +96,11 @@ footer{
 }
 
 .social-links img {
-    width: 18px;           /* Small icon size */
+    width: 18px;           
     height: 18px;
-    margin-right: 8px;     /* Gap between icon and text */
+    margin-right: 8px;    
 }
 
-
-/* Space each block in aside */
 section h3 {
     margin-top: 1.2rem;
     margin-bottom: 0.5rem;
@@ -147,4 +145,92 @@ section ul li a:hover {
     form {
         width: 90%;
     }
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #54bdee; /* brand heading color */
+}
+
+article h2, article p {
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr; /* only ONE column now */
+    padding: 1.5rem 2rem;
+}
+
+/* Images */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 1rem auto;
+}
+
+.therapists {
+    grid-column: 1 / -1;
+    margin-top: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    text-align: left; 
+}
+
+.therapists h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #54bdee;
+}
+
+.therapists p {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.therapists ul {
+    list-style: none;
+    margin: 0 auto; 
+    padding-left: 1.5rem;
+}
+
+.therapists li {
+    margin: 0.6rem 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.therapist-images {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.therapist-images img {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 50%; /* circular headshot style */
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.therapist-images figcaption {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #333;
 }
