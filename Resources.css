@@ -194,35 +194,52 @@ table a:hover {
 
 /* Sidebar */
 aside {
-    background-color: #f2f2f2;
-    padding: 1rem;
-    border-radius: 6px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-    line-height: 1.4;
+    background: #fff;  
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 280px;         
+    margin-top: 4.2rem;         
+    height: auto;             
 }
 
 aside h3 {
-    text-align: center; /* center heading */
+    text-align: center;
     margin-top: 0;
     margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #54bdee;
+    border-bottom: 2px solid #54bdee;
+    padding-bottom: 0.5rem;
 }
 
 aside ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    gap: 0.8rem;                    
     list-style: none;
-    padding-left: 0;
     margin: 0;
+    padding: 0;
 }
 aside ul li {
-    margin-bottom: 0.5rem;
+    margin: 0; 
 }
 aside ul li a {
     display: block;
-    color: #005f73;
+    text-align: center;             
+    padding: 0.6rem;
+    border-radius: 6px;
+    background: #f7f7f7;            
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
     text-decoration: none;
+    color: #000;
     font-size: 0.9rem;
+    transition: background 0.2s, transform 0.2s;
 }
 aside ul li a:hover {
-    text-decoration: underline;
+    background: #f0f8ff;    
+    color: #005f73;
+    transform: translateX(3px);  
 }
 
 /* Purpose statement style */
@@ -297,3 +314,91 @@ aside ul li a:hover {
     margin-top: 1rem;        
 }
 
+.resources-extra {
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    background: #f5f7ff; 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.resources-extra h3 {
+    text-align: center;
+    margin: 1.5rem 0 1rem;
+    color: #54bdee;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.tip-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.apps-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.app-card {
+    flex: 1 1 220px;
+    text-align: center;
+    text-decoration: none;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #000;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.app-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.wellness-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.wellness-item {
+    background: #fff;
+    border-left: 4px solid #54bdee;
+    border-radius: 6px;
+    padding: 0.8rem 1rem;
+     text-align: center;   
+    width: 100%;        
+    max-width: 600px;
+}
+
+.privacy {
+    text-align: center;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    background: #fff;
+    padding: 0.8rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.encouragement {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    color: #333;
+}
