@@ -147,6 +147,10 @@ section ul li a {
 section ul li a:hover {
     color: #0a9396;
 }
+.social-links i{
+    font-size: 1rem;
+    margin-right: 10%;
+}
 
 @media (max-width: 768px) {
     main {

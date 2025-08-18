@@ -143,6 +143,10 @@ footer{
     display: flex;
     align-items: center; 
 }
+.social-links i{
+    font-size: 1rem;
+    margin-right: 10%;
+}
 
 .social-links img {
     width: 18px;           
@@ -283,3 +287,4 @@ main {
     font-size: 0.9rem;
     color: #333;
 }
+
